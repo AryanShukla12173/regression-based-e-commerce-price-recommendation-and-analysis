@@ -14,6 +14,7 @@ Scrapes product details from Flipkart, Croma, and Reliance Digital.
  Provides visual insights into product prices and ratings.
 
 ## Project Structure
+
 ```bash
 price_recommendation/
 │
@@ -28,6 +29,7 @@ price_recommendation/
 ```
 
 ## Files Description
+
 * **analyze.py**: Contains functions for data preprocessing, price recommendation, and plotting price analysis.
 * **app.py**: Main Streamlit application file that sets up the UI and handles user interactions.
 * **config.json**: Configuration file containing URLs and XPaths for scraping product data.
@@ -38,13 +40,16 @@ fetch.py: Contains functions to set up the WebDriver and fetch product details f
 * **visualization.py**: Contains functions for visualizing the price analysis.
 
 ## Installation
+
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/price_recommendation.git
 cd price_recommendation
 ```
 
 ### 2. Create and activate a virtual environment
+
 ```bash
 python -m venv venv
 
@@ -53,6 +58,7 @@ venv\Scripts\activate # On Windows
 ```
 
 ### 3. Install dependencies
+
 ```
 pip install -r requirements.txt
 ```
@@ -61,9 +67,11 @@ pip install -r requirements.txt
 
 Ensure you have Chrome installed.  
 The webdriver_manager package will automatically handle the ChromeDriver installation.
+
 ## Usage
 
 ### 1. Run the Streamlit App
+
 ```
 streamlit run app.py
 ```
@@ -76,6 +84,7 @@ Analyze the data and visualize the price distribution and ratings.
 Get price recommendations by entering the cost price and product name.  
 
 ## Configuration
+
 * **config.json**: Update the URLs and XPaths if the structure of the target websites changes.
 ```json
 {
@@ -106,9 +115,27 @@ Get price recommendations by entering the cost price and product name.
 ```
 
 ## Demo
+
+### Starting Page
+
 ![Starting Page](./demo_images/initial.png)
+
+### Scraping with Chrome WebDriver
+
 ![Starting Page](./demo_images/scraping_process.png)
+
+### Product Price Comparison
+
 ![Starting Page](./demo_images/price_analysis.png)
+
+### Price Analysis Page
+
 ![Starting Page](./demo_images/second_page.png)
+
+### Price Graph for Products
+
 ![Starting Page](./demo_images/price_dist.png)
 
+### Product Information in a specific Range
+
+![Starting Page](./demo_images/prodbetweenrange.png )
