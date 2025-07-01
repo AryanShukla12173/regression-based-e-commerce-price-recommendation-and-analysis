@@ -411,3 +411,11 @@
 2025-07-01 21:34:24,832 - INFO - Get LATEST chromedriver version for google-chrome
 2025-07-01 21:34:24,898 - INFO - Get LATEST chromedriver version for google-chrome
 2025-07-01 21:34:24,956 - INFO - Driver [C:\Users\6arya\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-01 22:08:04,582 - INFO - ====== WebDriver manager ======
+2025-07-01 22:08:06,159 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-01 22:08:06,393 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-01 22:08:06,492 - INFO - Driver [C:\Users\6arya\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-01 22:09:35,088 - INFO - ====== WebDriver manager ======
+2025-07-01 22:09:36,608 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-01 22:09:36,668 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-01 22:09:36,724 - INFO - Driver [C:\Users\6arya\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache

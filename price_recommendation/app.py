@@ -5,13 +5,18 @@ from selenium import webdriver
 from fetch import setup_driver, fetch_flipkart_products, fetch_croma_products, fetch_reliance_products
 from analyze import save_data_to_csv, preprocess_data, recommend_price
 from visualization import plot_price_analysis
-
+import os
+st.write("Current working directory:", os.getcwd())
 
 # Load XPath configurations
 def load_config():
     try:
-        with open("config.json", "r") as f:
+        config_path = os.path.join(os.path.dirname(__file__), "config.json")
+        with open(config_path, "r") as f:
             return json.load(f)
+        st.write("Looking for config at:", config_path)
+        st.write("Exists?", os.path.exists(config_path))
+
     except Exception as e:
         st.error("⚠ Error loading XPath configurations. Check 'config.json'.")
         return None
@@ -23,6 +28,7 @@ if not config:
     st.stop()  # Stop execution if config is not loaded
 
 # 🎨 Streamlit UI - Page Config
+
 st.set_page_config(page_title="Price & Rating Comparison", page_icon="📊", layout="wide")
 
 # ✅ Initialize session state variables if they don't exist
