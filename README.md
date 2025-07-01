@@ -105,9 +105,10 @@ Get price recommendations by entering the cost price and product name.
 }
 ```
 
-## Contributing
+## Demo
+![Starting Page](./demo_images/initial.png)
+![Starting Page](./demo_images/scraping_process.png)
+![Starting Page](./demo_images/price_analysis.png)
+![Starting Page](./demo_images/second_page.png)
+![Starting Page](./demo_images/price_dist.png)
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.

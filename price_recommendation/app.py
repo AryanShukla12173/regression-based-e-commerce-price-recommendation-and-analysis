@@ -6,7 +6,7 @@ from fetch import setup_driver, fetch_flipkart_products, fetch_croma_products, f
 from analyze import save_data_to_csv, preprocess_data, recommend_price
 from visualization import plot_price_analysis
 import os
-st.write("Current working directory:", os.getcwd())
+
 
 # Load XPath configurations
 def load_config():
@@ -14,8 +14,6 @@ def load_config():
         config_path = os.path.join(os.path.dirname(__file__), "config.json")
         with open(config_path, "r") as f:
             return json.load(f)
-        st.write("Looking for config at:", config_path)
-        st.write("Exists?", os.path.exists(config_path))
 
     except Exception as e:
         st.error("⚠ Error loading XPath configurations. Check 'config.json'.")
@@ -172,7 +170,7 @@ with tab2:
     # if st.button("🔍 Show Price Analysis"):
     #     st.session_state.show_analysis = True
 
-    if st.button("Show Price Analysis Graph"): 
+    if st.button("Show Price Analysis Graph",key='u1'): 
         st.session_state.show_analysis = True  
     # 📊 Display dashboard if button was clicked
 
@@ -199,8 +197,8 @@ with tab2:
 with tab3:
     st.header("💰 Recommend Optimal Selling Price")
 
-    cost_price = st.number_input("Enter Cost Price (₹)", min_value=1.0, format="%.2f")
-    selected_product = st.text_input("Enter Product Name for Prediction")
+    cost_price = st.number_input("Enter Cost Price (₹)", min_value=1.0, format="%.2f",key='u3')
+    selected_product = st.text_input("Enter Product Name for Prediction",key='u4')
 
     if st.button("Recommend Price", key="recommend_price_btn"):
         if selected_product.strip() and cost_price:
